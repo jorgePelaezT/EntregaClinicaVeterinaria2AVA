@@ -15,8 +15,10 @@ public class ClinicaVeterinaria {
 
 	/**
      * @param args the command line arguments
+	 * @param PRUEBA TODO
+	 * @return TODO
      */
-    public static void main(String[] args) throws IOException {
+    public static int main(String[] args, String PRUEBA) throws IOException {
         //ATRIBUTOS
         int numero = 5;
         BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
@@ -88,6 +90,7 @@ public class ClinicaVeterinaria {
             }
 
         } while (numero != 7);
+		return numero;
 
     }
 
@@ -175,7 +178,7 @@ public class ClinicaVeterinaria {
 		            System.err.println(EXCEPCIONENTERO);
 		            return;
 		        }
-		        m1 = new Cosita(ID, nombre, edad, raza, p2, gradosalvaje);
+		        m1 = new Gato(ID, nombre, edad, raza, p2, gradosalvaje);
 		        break;
 		    default:
 		        m1 = new Mascota(ID, nombre, edad, raza, p2);
